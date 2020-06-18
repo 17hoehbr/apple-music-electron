@@ -12,7 +12,7 @@ I made this specifically for linux but I could see it being useful for Windows u
 
 # Building from source
 
-Requirements: YARN https://classic.yarnpkg.com/en/docs/install/#debian-stable
+Requirements: YARN https://classic.yarnpkg.com/en/docs/install
 
 1. Clone project
 
