@@ -1,6 +1,6 @@
 {
   "name": "apple-music-wrapper",
-  "productName": "Apple Music Wrapper",
+  "productName": "Apple Music",
   "version": "0.1.0",
   "description": "Electron wrapper for Apple Music",
   "license": "MIT",
@@ -31,7 +31,8 @@
     "linux": {
       "target": [
         "AppImage",
-        "deb"
+        "deb",
+        "snap"
       ],
       "category": "AudioVideo",
       "icon": "./assets/icon.icns"
@@ -45,5 +46,5 @@
   },
   
   "author": "17hoehbr <17hoehbr@gmail.com>",
-  "homepage": "null"
+  "homepage": "https://github.com/17hoehbr/Apple-Music-Wrapper"
 }
