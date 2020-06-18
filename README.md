@@ -7,7 +7,7 @@ I made this specifically for linux but I could see it being useful for Windows u
 
 # Known bugs:
 - App sometimes does not close while music is playing. Try pausing the music before closing the app if this happens frequently.
-- Occasionally clicking shuffle will error message "adamId: null not found". Either ignore it and click it again or click play then enable shuffle from the control bar instead.
+- Occasionally clicking shuffle will give the error message "adamId: null not found". Either ignore it and click it again or click play then enable shuffle from the control bar instead.
 
 Bugs are to be expected as this is my first project and Apple Music is buggy enough as is. The shuffle bug seems to be something on Apple's end but the can't close while playing bug is likely fixable.
 
