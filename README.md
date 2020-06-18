@@ -6,9 +6,8 @@ This is my first project so expect bugs. This project was made possible thanks t
 I made this specifically for linux but I could see it being useful for Windows users who don't want to deal with iTunes. I'll try compiling a Windows port asap.
 
 # Known bugs:
-- Icon does not appear in KDE menu until after a reboot
-- App cannot be closed while music is playing, you must pause the current song then close
-- Occasionally clicking shuffle will give an error message. Either ignore it and click it again or click play then enable shuffle from the control bar instead.
+- App sometimes does not close while music is playing. Try pausing the music before closing the app if this happens frequently.
+- Occasionally clicking shuffle will error message "adamId: null not found". Either ignore it and click it again or click play then enable shuffle from the control bar instead.
 
 # Building from source
 
