@@ -30,5 +30,5 @@ Requirements: YARN https://classic.yarnpkg.com/en/docs/install/#debian-stable
 
 ```$ yarn dist```
 
-This will automatically generate a .deb package and an AppImage file. Additional outputs can be configured by modifying the target value in package.json. All options can be found here https://www.electron.build/configuration/linux
+This will automatically generate several package outputs. Additional outputs can be configured by modifying the target value in package.json. All options can be found here https://www.electron.build/configuration/linux
 
