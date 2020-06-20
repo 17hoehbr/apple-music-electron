@@ -13,6 +13,19 @@ Essentially all this does is load the music.apple.com site in an Electron Wrappe
 # Download
 
 Pre-compiled binaries are available here:
+=======
+I made this specifically for linux but I could see it being useful for Windows users who don't want to deal with iTunes. I'll try compiling a Windows port asap. Technically this could easily be compiled for Mac as well but that would be an abomination.
+
+# Known bugs:
+- App sometimes does not close while music is playing. Try pausing the music before closing the app if this happens frequently.
+- Occasionally clicking shuffle will give the error message "adamId: null not found". Either ignore it and click it again or click play then enable shuffle from the control bar instead.
+
+Bugs are to be expected as this is my first project and Apple Music is buggy enough as is. The shuffle bug seems to be something on Apple's end but the can't close while playing bug is likely fixable.
+
+This is essentially just the music.apple.com site but wrapped into a desktop application. Obviously features not present in the web version do not exist here either (ex. adding songs to playlists). Please report any bugs you find in the application but also try to reproduce them in the website first. If the bug is present in both take it up with Apple, but if it's exclusive to electron I'd be happy to look into it.
+
+# Download
+
 https://github.com/17hoehbr/Apple-Music-Wrapper/releases
 
 # Building from source
