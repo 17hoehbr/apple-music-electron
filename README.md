@@ -21,7 +21,7 @@ Requirements: YARN https://classic.yarnpkg.com/en/docs/install
 
 1. Clone project
 
-```$ git clone git@github.com:17hoehbr/Apple-Music-Wrapper.git```
+```$ git clone https://github.com/17hoehbr/Apple-Music-Wrapper.git```
 
 2. Navigate to folder 
 
