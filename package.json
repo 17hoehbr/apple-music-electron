@@ -15,13 +15,13 @@
     "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
-    "source-map-support": "latest"
+    "source-map-support": "^0.5.16"
   },
   "devDependencies": {
     "electron": "https://github.com/castlabs/electron-releases.git",
-    "electron-builder": "latest",
-    "electron-webpack": "latest",
-    "webpack": "latest"
+    "electron-builder": "^22.7.0",
+    "electron-webpack": "^2.8.2",
+    "webpack": "~4.42.1"
   },
   "build": {
     "electronDownload": {
