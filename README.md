@@ -1,4 +1,6 @@
-# Apple-Music-Wrapper
+# apple-music-linux
+![screenshot of app window](https://github.com/17hoehbr/Apple-Music-Wrapper/preview.png)
+
 A desktop client for Apple Music using Electron.
 
 This is my first github project so expect bugs. This project was made possible thanks to the castlabs electron fork which adds DRM support: https://github.com/castlabs/electron-releases/
@@ -6,12 +8,10 @@ This is my first github project so expect bugs. This project was made possible t
 Essentially all this does is load the music.apple.com site in an electron wrapper, so features available will be limited to those on Apple's web interface.
 
 # Download
-
 Pre-compiled binaries are available here:
 https://github.com/17hoehbr/Apple-Music-Wrapper/releases
 
 # Building from source
-
 Requirements: YARN https://classic.yarnpkg.com/en/docs/install
 
 1. Clone project
