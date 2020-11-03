@@ -12,7 +12,9 @@ Pre-compiled binaries are available here:
 https://github.com/17hoehbr/Apple-Music-Wrapper/releases
 
 I test against the AppImage package so I recommend trying that if you run into issues on other package distributions.
+
 I recommend using [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) to integrate and run AppImages.
+
 # Building from source
 Requirements: YARN https://classic.yarnpkg.com/en/docs/install
 
@@ -22,7 +24,7 @@ Requirements: YARN https://classic.yarnpkg.com/en/docs/install
 
 2. Navigate to folder 
 
-```$ cd Apple-Music-Wrapper```
+```$ cd apple-music-linux```
 
 3. Install dependencies
 
