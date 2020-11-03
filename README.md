@@ -30,5 +30,8 @@ Requirements: YARN https://classic.yarnpkg.com/en/docs/install
 
 ```$ yarn dist```
 
+Alternatively you can run the app directly from source without compiling using
+```$ yarn start```
+
 Additional outputs can be configured by modifying the target value in package.json. All options can be found here https://www.electron.build/configuration/linux
 
