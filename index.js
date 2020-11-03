@@ -1,5 +1,6 @@
-const { app, BrowserWindow, globalShortcut } = require('electron')
-var path = require('path')
+const { app, BrowserWindow } = require('electron')
+const fs = require('fs')
+const path = require('path')
 
 function createWindow () {
   // Create the browser window.
@@ -8,21 +9,28 @@ function createWindow () {
     width: 800,
     height: 600,
     minWidth: 300,
-    minHeight: 300,
-  // Enables DRM
-    webPreferences: {
-      plugins: true
-    }
+    minHeight: 300
   })
   
   // hide toolbar
   win.setMenuBarVisibility(false);
 
-  // and load Apple Music
-  win.loadURL("http://music.apple.com");
+  // loads apple music webplayer
+  win.loadURL('http://music.apple.com')
+  // injects css
+  win.webContents.on('did-finish-load', function() {
+    fs.readFile(__dirname+ '/styles.css', "utf-8", function(error, data) {
+      if(!error){
+      var formatedData = data.replace(/\s{2,10}/g, ' ').trim()
+      win.webContents.insertCSS(formatedData)
+      }
+    })
+  })
+  // nukes electron when close button clicked
+  // idk if this is the best way to handle it but otherwise you cant exit while music is playing
+  win.on('close', () => {
+    app.exit()
+  })
 }
-
-// This method will be called when Electron has finished
-// initialization and is ready to create browser windows.
-// Some APIs can only be used after this event occurs.
-app.whenReady().then(createWindow)
+// enables DRM and opens window
+app.on('widevine-ready', createWindow)

@@ -1,9 +1,9 @@
 {
   "author": "17hoehbr <17hoehbr@gmail.com>",
   "homepage": "https://github.com/17hoehbr/Apple-Music-Wrapper",
-  "name": "apple-music-wrapper",
-  "productName": "Apple Music",
-  "version": "1.0.0",
+  "name": "apple-music",
+  "productName": "apple-music",
+  "version": "1.1.0",
   "description": "Electron wrapper for Apple Music",
   "license": "MIT",
   "buildResources": "assets",
@@ -18,7 +18,7 @@
     "source-map-support": "^0.5.16"
   },
   "devDependencies": {
-    "electron": "https://github.com/castlabs/electron-releases.git",
+    "electron": "https://github.com/castlabs/electron-releases#v8.5.3-wvvmp",
     "electron-builder": "^22.7.0",
     "electron-webpack": "^2.8.2",
     "webpack": "~4.42.1"
@@ -47,7 +47,9 @@
       "target": [
         "nsis"
       ],
-      "icon": "./assets/icon.ico" 
+      "icon": "./assets/icon.ico"
     }
-  }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:17hoehbr/Apple-Music-Wrapper.git"
 }
