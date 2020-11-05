@@ -37,7 +37,10 @@ function createWindow() {
       'height': mainWindowState.height,
       // Enables DRM
       webPreferences: {
-          plugins: true
+          plugins: true,
+          nodeIntegration: false,
+          contextIsolation: true,
+          sandbox: true
       }
   });
   // Let us register listeners on the window, so we can update the state
