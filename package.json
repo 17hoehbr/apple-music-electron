@@ -1,9 +1,13 @@
 {
   "name": "apple-music-electron",
-  "version": "1.1.1",
+  "version": "1.1.0",
   "main": "index.js",
   "description": "Electron wrapper for Apple Music",
-  "author": "17hoehbr",
+  "author": {
+    "name": "17hoehbr",
+    "email": "17hoehbr@gmail.com",
+    "url": "https://github.com/17hoehbr/apple-music-electron"
+  },
   "homepage": "https://github.com/17hoehbr/apple-music-electron",
   "keywords": [
     "Apple",
@@ -55,7 +59,10 @@
         "StartupWMClass": "apple-music"
       },
       "target": [
-        "AppImage"
+        "AppImage",
+        "tar.gz",
+        "deb",
+        "rpm"
       ]
     },
     "win": {
