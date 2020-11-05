@@ -20,7 +20,7 @@
     "start": "electron --disable-gpu .",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
-    "publish": "electron-builder -p always",
+    "publish-linux": "electron-builder -p always",
     "publish-win": "electron-builder -p always --win",
     "pack-win": "electron-builder --dir --win",
     "dist-win": "electron-builder --win"
