@@ -15,8 +15,6 @@ Currently the only package formats supported is AppImage and a windows installer
 I highly recommend using TheAssassin's [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) to install & run app image programs. This should fully incorporate it into your distros application menu.
 
 Downloads available on the [release page](https://github.com/17hoehbr/apple-music-electron/releases).
-# Building from source
-=======
 
 # Building from source
 Requirements: YARN https://classic.yarnpkg.com/en/docs/install
