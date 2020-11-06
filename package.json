@@ -51,10 +51,9 @@
       "assets/icon.*"
     ],
     "linux": {
-      "icon": "assets/icon.png",
+      "icon": "./assets/icon.icns",
       "category": "AudioVideo;Audio",
       "desktop": {
-        "icon": "assets/icon.png",
         "Name": "Apple Music",
         "Comment": "Unofficial Apple Music client for Linux",
         "StartupWMClass": "apple-music"
@@ -67,7 +66,7 @@
       ]
     },
     "win": {
-      "icon": "assets/icon.ico",
+      "icon": "./assets/icon.ico",
       "target": [
         "nsis"
       ],
