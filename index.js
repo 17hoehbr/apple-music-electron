@@ -30,7 +30,7 @@ function createWindow() {
   });
   // Create the browser window.
   const win = new BrowserWindow({
-      icon: path.join(__dirname, './assets/icon.png'),
+      icon: path.join(__dirname, 'assets/icon.png'),
       'x': mainWindowState.x,
       'y': mainWindowState.y,
       'width': mainWindowState.width,
