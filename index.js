@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, nativeTheme } = require('electron');
 const fs = require('fs');
 const path = require('path');
 const windowStateKeeper = require('electron-window-state');
@@ -30,7 +30,7 @@ function createWindow() {
   });
   // Create the browser window.
   const win = new BrowserWindow({
-      icon: path.join(__dirname, './assets/icon.png'),
+      icon: path.join(__dirname, 'icon.png'),
       'x': mainWindowState.x,
       'y': mainWindowState.y,
       'width': mainWindowState.width,
