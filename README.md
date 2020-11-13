@@ -22,11 +22,11 @@ Requirements: YARN https://classic.yarnpkg.com/en/docs/install
 
 1. Clone project
 
-```$ git clone https://github.com/17hoehbr/Apple-Music-Wrapper.git```
+```$ git clone https://github.com/17hoehbr/apple-music-electron.git```
 
 2. Navigate to folder 
 
-```$ cd apple-music-linux```
+```$ cd apple-music-electron```
 
 3. Install dependencies
 
