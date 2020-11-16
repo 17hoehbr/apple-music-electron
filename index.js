@@ -53,6 +53,9 @@ function createWindow() {
   win.setMenuBarVisibility(false);
   // loads apple music webplayer
   win.loadURL('http://music.apple.com');
+  // fix for dark mode on popos (and possibly other distros)
+  // overrides and supersedes the value that Chromium has chosen to use internally
+   if(nativeTheme.shouldUseDarkColors) nativeTheme.themeSource = 'dark';
   // injects css from styles.css
   win.webContents.on('did-finish-load', function() {
       fs.readFile(__dirname + '/styles.css', "utf-8", function(error, data) {
