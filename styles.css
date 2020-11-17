@@ -23,3 +23,8 @@ Not supports in Firefox and IE */
 ::-webkit-scrollbar-button {
   display:none;
 }
+
+/* hide "Open in iTunes" button */
+.web-navigation__native-upsell {
+  display: none;
+}
