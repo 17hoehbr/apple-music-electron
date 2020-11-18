@@ -1,6 +1,6 @@
 {
   "name": "apple-music-electron",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "main": "index.js",
   "description": "Electron wrapper for Apple Music",
   "author": {
