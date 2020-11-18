@@ -47,15 +47,13 @@ function createWindow() {
   // automatically (the listeners will be removed when the window is closed)
   // and restore the maximized or full screen state
   mainWindowState.manage(win);
-  // deletes toolbar entirely
-  // can be replaced with "win.setAutoHideMenuBar(true)" to allow access by pressing alt but it was still loading by default when I tried it
-  // toolbar is pretty useless anyway
-  win.setMenuBarVisibility(false);
-  // loads apple music webplayer
+  // hides scrollbar
+  win.setAutoHideMenuBar(true);
+  // load Apple Music
   win.loadURL('http://music.apple.com');
   // fix for dark mode on popos (and possibly other distros)
   // overrides and supersedes the value that Chromium has chosen to use internally
-   if(nativeTheme.shouldUseDarkColors) nativeTheme.themeSource = 'dark';
+  if(nativeTheme.shouldUseDarkColors) nativeTheme.themeSource = 'dark';
   // injects css from styles.css
   win.webContents.on('did-finish-load', function() {
       fs.readFile(__dirname + '/styles.css', "utf-8", function(error, data) {
