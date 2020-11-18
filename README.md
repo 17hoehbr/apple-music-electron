@@ -3,20 +3,36 @@
 =======
 A desktop client for Apple Music using Electron.
 
-This is my first github project so expect bugs.
-
-Essentially all this does is load the music.apple.com site in an electron wrapper, so features available will be limited to those on Apple's web interface.
-
 Initially created for Linux since iTunes is not available, but also compiled for Windows for those who find iTunes too bloated. Unlike iTunes this app should comply with Windows 10's Dark Mode.
-# Download
+# Install
 Pre-compiled binaries available on the [release page](https://github.com/17hoehbr/apple-music-electron/releases).
 
-I recemmend using the Appimage since it supports automatic updates, whereas the other packages will not until I get them listed on package managers.
+Generic Linux:
 
-I highly recommend using TheAssassin's [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) to install & run the Appimage. This should fully incorporate it into your distros application menu.
+  Use [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) to install latest AppImage from [release page.](https://github.com/17hoehbr/apple-music-electron/releases)
+  
+  
+Debian:
 
-Arch-based users can use the AUR package [apple-music-electron](https://aur.archlinux.org/packages/apple-music-electron/)
+  Download latest deb [release](https://github.com/17hoehbr/apple-music-electron/releases)
+  
+  Navigate to download directory (ex. /home/USERNAME/Downloads)
+  
+  ```$ cd ~/Downloads```
+  
+  ```$ dpkg -i apple-music-electron_*.deb```
+  
+  
+[Arch](https://aur.archlinux.org/packages/apple-music-electron/):
 
+  ```$ yay -S apple-music-electron```
+  
+  
+Windows:
+
+  Download and run setup.exe
+  
+  
 # Building from source
 Requirements: YARN https://classic.yarnpkg.com/en/docs/install
 
