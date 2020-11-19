@@ -35,6 +35,8 @@ function createWindow() {
       'y': mainWindowState.y,
       'width': mainWindowState.width,
       'height': mainWindowState.height,
+      minWidth: 350,
+      minHeight: 100,
       // Enables DRM
       webPreferences: {
           plugins: true,
@@ -55,7 +57,10 @@ function createWindow() {
   win.loadURL('http://music.apple.com');
   // fix for dark mode on popos (and possibly other distros)
   // overrides and supersedes the value that Chromium has chosen to use internally
-  if(nativeTheme.shouldUseDarkColors) nativeTheme.themeSource = 'dark';
+  if(nativeTheme.shouldUseDarkColors) {
+    nativeTheme.themeSource = 'dark';
+    win.setBackgroundColor('#1f1f1f');
+  }
   // injects css from styles.css
   win.webContents.on('did-finish-load', function() {
       fs.readFile(__dirname + '/styles.css', "utf-8", function(error, data) {
@@ -66,7 +71,6 @@ function createWindow() {
       });
   });
   // nukes electron when close button clicked
-  // maybe not the cleanest solution but otherwise it does not exit while music is playing
   win.on('close', () => {
       app.exit();
   });
