@@ -4,33 +4,38 @@
 A desktop client for Apple Music using Electron.
 
 Initially created for Linux since iTunes is not available, but also compiled for Windows for those who find iTunes too bloated. Unlike iTunes this app should comply with Windows 10's Dark Mode.
+
 # Install
+
 Pre-compiled binaries available on the [release page](https://github.com/17hoehbr/apple-music-electron/releases).
 
-Generic Linux:
+**Debian / Ubuntu:**
 
-  Use [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) to install latest AppImage from [release page.](https://github.com/17hoehbr/apple-music-electron/releases)
-  
-  
-Debian:
+  * Use the Generic Linux instructions instead if you want automatic updates
 
-  Download latest deb [release](https://github.com/17hoehbr/apple-music-electron/releases)
+  * Download latest deb [release](https://github.com/17hoehbr/apple-music-electron/releases)
   
-  Navigate to download directory (ex. /home/USERNAME/Downloads)
+  * Navigate to download directory (ex. /home/USERNAME/Downloads)
   
-  ```$ cd ~/Downloads```
+    * ```$ cd ~/Downloads```
   
-  ```$ dpkg -i apple-music-electron_*.deb```
+    * ```$ dpkg -i apple-music-electron_*.deb```
   
   
-[Arch](https://aur.archlinux.org/packages/apple-music-electron/):
+**Arch / Manjaro:**
+  
+  * Install [apple-music-electron](https://aur.archlinux.org/packages/apple-music-electron/) from the AUR
 
-  ```$ yay -S apple-music-electron```
-  
-  
-Windows:
+    * ```$ yay -S apple-music-electron```
 
-  Download and run setup.exe
+
+**Generic Linux:**
+
+  * Use [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) to install latest [AppImage release](https://github.com/17hoehbr/apple-music-electron/releases)
+  
+**Windows:**
+
+  * Download and run [apple-music-electron-Setup-*.exe](https://github.com/17hoehbr/apple-music-electron/releases)
   
   
 # Building from source
