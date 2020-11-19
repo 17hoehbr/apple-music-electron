@@ -47,7 +47,9 @@ function createWindow() {
   // automatically (the listeners will be removed when the window is closed)
   // and restore the maximized or full screen state
   mainWindowState.manage(win);
-  // hides scrollbar
+  // hides toolbar
+  win.setMenuBarVisibility(false);
+  // allows you to open toolbar by pressing alt
   win.setAutoHideMenuBar(true);
   // load Apple Music
   win.loadURL('http://music.apple.com');
