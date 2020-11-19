@@ -1,9 +1,10 @@
-const { app, BrowserWindow, nativeTheme } = require('electron');
+const { app, BrowserWindow, nativeTheme, Menu } = require('electron');
 const fs = require('fs');
 const path = require('path');
 const windowStateKeeper = require('electron-window-state');
 const { autoUpdater } = require("electron-updater");
 const log = require("electron-log");
+const Store = require("electron-store");
 
 //-------------------------------------------------------------------
 // Logging
@@ -22,6 +23,52 @@ app.on('ready', function() {
   autoUpdater.checkForUpdatesAndNotify();
 });
 
+// electron-store
+const storeSchema = {
+  beta: {
+    type: 'boolean',
+    default: false
+  },
+  darkmode: {
+    type: 'boolean',
+    default: null
+  }
+};
+
+const store = new Store(storeSchema);
+
+// Custom menu
+const menuSchema = [
+  {
+    label: "Settings",
+    submenu: [{
+    click: () => {
+      store.set("beta", !store.get("beta")); // change beta setting on click
+      app.relaunch();
+      app.exit(); // restarts the app
+    },
+    type: "checkbox",
+    label: "Use beta version",
+    enabled: true,
+    checked: store.get("beta")
+  },
+  {
+    label: "Dark mode",
+    type: "checkbox",
+    enabled: true,
+    checked: store.get("darkmode") === null ? nativeTheme.shouldUseDarkColors : store.get("darkmode"),
+    click: () => {
+      if (store.get("darkmode") === null) {
+        store.set("darkmode", !nativeTheme.shouldUseDarkColors)
+      } else store.set("darkmode", !store.get("darkmode"))
+      nativeTheme.themeSource = store.get("darkmode") ? "dark" : "light"
+    }
+  }
+]
+}];
+const menu = Menu.buildFromTemplate(menuSchema);
+Menu.setApplicationMenu(menu);
+// Create window
 function createWindow() {
   // Window state
   let mainWindowState = windowStateKeeper({
@@ -53,14 +100,21 @@ function createWindow() {
   win.setMenuBarVisibility(false);
   // allows you to open toolbar by pressing alt
   win.setAutoHideMenuBar(true);
-  // load Apple Music
-  win.loadURL('http://music.apple.com');
-  // fix for dark mode on popos (and possibly other distros)
-  // overrides and supersedes the value that Chromium has chosen to use internally
-  if(nativeTheme.shouldUseDarkColors) {
-    nativeTheme.themeSource = 'dark';
-    win.setBackgroundColor('#1f1f1f');
+  // load Apple Music based on the store value
+  win.loadURL(store.get("beta") ? "https://beta.music.apple.com" : "https://music.apple.com");
+  // dark mode setting
+  switch (store.get("darkmode")) {
+    case null:
+      nativeTheme.themeSource = "system";
+      break;
+    case true:
+      nativeTheme.themeSource = "dark";
+      break;
+    default:
+      nativeTheme.themeSource = "light";
+      break;
   }
+
   // injects css from styles.css
   win.webContents.on('did-finish-load', function() {
       fs.readFile(__dirname + '/styles.css', "utf-8", function(error, data) {
