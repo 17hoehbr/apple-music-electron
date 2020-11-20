@@ -20,7 +20,7 @@ Pre-compiled binaries available on the [release page](https://github.com/17hoehb
 
 **Debian / Ubuntu:**
 
-  * Use the Generic Linux instructions instead if you want automatic updates. Will get around to making a PPA eventually.
+Use the Generic Linux instructions instead if you want automatic updates. Will get around to making a PPA eventually.
 
   * Download latest deb [release](https://github.com/17hoehbr/apple-music-electron/releases)
   
@@ -40,8 +40,9 @@ Pre-compiled binaries available on the [release page](https://github.com/17hoehb
 
 **Generic Linux:**
 
+May take longer to launch than native packages due to auto updating
+
   * Use [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) to install latest [AppImage release](https://github.com/17hoehbr/apple-music-electron/releases)
-  * May take longer to launch than native packages due to auto updating
   
 **Windows:**
 
