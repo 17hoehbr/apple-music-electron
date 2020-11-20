@@ -73,6 +73,16 @@ Alternatively you can run the app directly from source using
 
 Additional outputs can be configured by modifying the target value in package.json. All options can be found here https://www.electron.build/configuration/linux
 
+# Donate
+
+I'm a broke college student writing this for fun. No obligation or expectation of donations given how small of a project this is, but I'd appreciate a cup of coffee
+
+Nano (prefered): nano_3fmqtj5x9jqpis6siyekootyerdz3za5jme63a3mdrojp4jewck4xqij1gga
+
+Bitcoin: bc1qsreqdtdkjrx90kwvkznmp2eten7jw0x9nmz7j6
+
+Ethereum: 0xd12f64443549b0C421C1290474572Fd9843667AF
+
 # Credits
 
 Made with [Electron-Builder](https://www.electron.build/).
