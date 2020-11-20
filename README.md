@@ -74,6 +74,9 @@ Alternatively you can run the app directly from source using
 Additional outputs can be configured by modifying the target value in package.json. All options can be found here https://www.electron.build/configuration/linux
 
 # Credits
+
+Made with [Electron-Builder](https://www.electron.build/).
+
 Icon created by [Tristan Edwards](https://dribbble.com/tristanedwards) and used under the [CC Attribute license](https://creativecommons.org/licenses/by/3.0/). No modifications have been made.
 
 DRM support is provided by a custom version of electron by [castlabs](https://github.com/castlabs/electron-releases/).
