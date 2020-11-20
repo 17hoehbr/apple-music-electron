@@ -75,6 +75,8 @@ function createWindow() {
     'height': mainWindowState.height,
     minWidth: 350,
     minHeight: 100,
+    // hide until ready
+    show: false,
     // Enables DRM
     webPreferences: {
       plugins: true,
@@ -117,6 +119,10 @@ function createWindow() {
       }
     });
   });
+  // shows when ready
+  win.once('ready-to-show', () => {
+    win.show()
+  })
 }
 
 // enables DRM and opens window
