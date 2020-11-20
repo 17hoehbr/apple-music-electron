@@ -123,12 +123,11 @@ function createWindow() {
   win.once('ready-to-show', () => {
     win.show()
   })
+  // nukes electron when close button clicked
+  win.on('close', () => {
+    app.exit();
+  });
 }
 
 // enables DRM and opens window
 app.on('widevine-ready', createWindow);
-
-// nukes electron when close button clicked
-app.on('close', () => {
-  app.exit();
-});
