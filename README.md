@@ -1,5 +1,6 @@
 # apple-music-electron
 ![preview.png](https://raw.githubusercontent.com/17hoehbr/apple-music-electron/master/preview.png)
+![preview_dark.png](https://raw.githubusercontent.com/17hoehbr/apple-music-electron/master/preview_dark.png)
 =======
 A desktop client for Apple Music using Electron.
 
