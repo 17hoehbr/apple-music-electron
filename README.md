@@ -5,6 +5,14 @@ A desktop client for Apple Music using Electron.
 
 Initially created for Linux since iTunes is not available, but also compiled for Windows for those who find iTunes too bloated. Unlike iTunes this app should comply with Windows 10's Dark Mode.
 
+# Usage
+
+Should be pretty straightforward. Since it's just an electron wrapper of Apple's website all features available will obviously be limited to those on Apple music's webplayer (i.e. no playlist creation).
+
+By default electron loads beta.music.apple.com instead of the stable version because it seems to run much smoother in my testing, but if this ever raises any issues it can be disabled by clicking Alt then going to the Settings tab in the top menu that will appear.
+
+Electron should also detect your native desktop theme and automatically apply dark mode if applicable, but this can also be manually toggled in the Settings menu.
+
 # Install
 
 Pre-compiled binaries available on the [release page](https://github.com/17hoehbr/apple-music-electron/releases).
