@@ -75,7 +75,7 @@ Additional outputs can be configured by modifying the target value in package.js
 
 # Donate
 
-I'm a broke college student writing this for fun. No obligation or expectation of donations given how small of a project this is, but I'd appreciate a cup of coffee
+I'm a broke college student writing this for fun. No obligation or expectation of donations given how small of a project this is, but a cup of coffee would be appreciated.
 
 Nano (prefered): nano_3fmqtj5x9jqpis6siyekootyerdz3za5jme63a3mdrojp4jewck4xqij1gga
 
