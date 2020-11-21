@@ -17,8 +17,8 @@ Electron should also detect your native desktop theme and automatically apply da
 Streamer Mode:
  * Resize window to minimum size
  * Add WindowCapture in OBS
- * Set Window to Apple Music Window"
- * Set Crop Top to 50
+ * Set Window to Apple Music Window
+ * Set Crop Top to ~50px
  * [Result](https://raw.githubusercontent.com/17hoehbr/apple-music-electron/master/stream_preview.png)
 
 # Install
