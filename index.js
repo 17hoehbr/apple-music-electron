@@ -1,5 +1,5 @@
 const { app, BrowserWindow, nativeTheme, Menu } = require('electron');
-
+require('v8-compile-cache');
 // Check for updates
 const { autoUpdater } = require("electron-updater");
 app.on('ready', function() {
