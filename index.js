@@ -52,6 +52,10 @@ const menuSchema = [{
         } else store.set("darkmode", !store.get("darkmode"))
         nativeTheme.themeSource = store.get("darkmode") ? "dark" : "light"
       }
+    },
+    {
+      label: "Dev Tools",
+      role: "toggleDevTools"
     }
   ]
 }];
