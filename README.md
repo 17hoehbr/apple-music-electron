@@ -14,6 +14,13 @@ By default electron loads beta.music.apple.com instead of the stable version bec
 
 Electron should also detect your native desktop theme and automatically apply dark mode if applicable, but this can also be manually toggled in the Settings menu.
 
+Streamer Mode:
+ * Resize window to minimum size
+ * Add WindowCapture in OBS
+ * Set Window to Apple Music Window"
+ * Set Crop Top to 50
+ * [Result](https://raw.githubusercontent.com/17hoehbr/apple-music-electron/master/stream_preview.png)
+
 # Install
 
 Pre-compiled binaries available on the [release page](https://github.com/17hoehbr/apple-music-electron/releases).
