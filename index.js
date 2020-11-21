@@ -1,5 +1,6 @@
 const { app, BrowserWindow, nativeTheme, Menu } = require('electron');
 require('v8-compile-cache');
+
 // Check for updates
 const { autoUpdater } = require("electron-updater");
 app.on('ready', function() {
@@ -56,6 +57,32 @@ const menuSchema = [{
 }];
 const menu = Menu.buildFromTemplate(menuSchema);
 Menu.setApplicationMenu(menu);
+
+// Cache
+const express = require("express");
+const fileCacheMiddleware = require("express-asset-file-cache-middleware");
+
+const cache = express();
+
+cache.get(
+  "/assets/:asset_id",
+  async (req, res, next) => {    
+    res.locals.fetchUrl = [
+      `https://music.apple.com`,
+      'https://beta.music.apple.com'
+    ];
+    next();
+  },
+  (req, res) => {
+    res.set({
+      "Content-Type": res.locals.contentType,
+      "Content-Length": res.locals.contentLength
+    });
+    res.end(res.locals.buffer, "binary");
+  }
+);
+
+cache.listen(3000);
 
 // Create window
 function createWindow() {
