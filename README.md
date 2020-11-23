@@ -43,7 +43,16 @@ Use the Generic Linux instructions instead if you want automatic updates. Will g
   * Install [apple-music-electron](https://aur.archlinux.org/packages/apple-music-electron/) from the AUR
 
     * ```$ yay -S apple-music-electron```
+    
+**Solus:**
 
+  * Download latest deb [release](https://github.com/17hoehbr/apple-music-electron/releases)
+  * Extract deb file
+    * ```$ ar vx apple-music-electron_*.deb```
+  * Extract data archive
+    * ```$ mkdir data && tar -xf data.tar.xz -C data && cd data```
+  * Move contents to the appropriate location in your file manager (as root/sudo)
+    * **IMPORTANT: Make sure you choose a file manager that allows the merging of folders to avoid any errors.**
 
 **Generic Linux:**
 
