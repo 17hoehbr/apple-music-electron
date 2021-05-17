@@ -66,7 +66,7 @@ May take longer to launch than native packages due to auto updating
   
   
 # Building from source
-Requirements: YARN https://classic.yarnpkg.com/en/docs/install
+Requirements: [YARN](https://classic.yarnpkg.com/en/docs/install) & [Node >=14.17.0](https://nodejs.org/en/download/)
 
 1. Clone project
 
