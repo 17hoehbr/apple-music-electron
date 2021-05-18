@@ -91,6 +91,8 @@ const menuSchema = [{
                 store.set("darkmode", !nativeTheme.shouldUseDarkColors)
             } else store.set("darkmode", !store.get("darkmode"))
             nativeTheme.themeSource = store.get("darkmode") ? "dark" : "light"
+            app.relaunch();
+            app.exit(); // restarts the app
         }
     },
     {
