@@ -1,3 +1,4 @@
+# DEPRICATED: Please switch to this https://github.com/cryptofyre/Apple-Music-Electron
 # apple-music-electron
 ![preview.png](https://raw.githubusercontent.com/17hoehbr/apple-music-electron/master/preview.png)
 ![preview_dark.png](https://raw.githubusercontent.com/17hoehbr/apple-music-electron/master/preview_dark.png)
